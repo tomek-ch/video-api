@@ -1,10 +1,16 @@
+import "dotenv/config";
 import express from "express";
+import getVideo from "./utils/getVideo";
 
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("hello world");
+app.get("/video", async (req, res) => {
+  if (typeof req.query.q === "string") {
+    const result = await getVideo(req.query.q);
+    return res.json(result);
+  }
+  return res.json(null);
 });
 
 const port = process.env.PORT || 4000;
