@@ -19,8 +19,6 @@ async function getVimeoVideo(id: string) {
     views: video.stats.plays,
     likes: video.metadata.connections.likes.total,
     thumbnail: video.pictures.sizes[3].link,
-    timestamp: Date.now(),
-    favorite: false,
   };
   return data;
 }

@@ -33,8 +33,6 @@ async function getYtVideo(text: string) {
       thumbnails?.standard?.url ||
       thumbnails?.high?.url ||
       thumbnails?.default?.url,
-    timestamp: Date.now(),
-    favorite: false,
   };
   return data;
 }
