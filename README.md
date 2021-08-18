@@ -1,6 +1,6 @@
 ## Video API
 
-Fetch information about YouTube and Vimeo videos.
+Fetch information about YouTube and Vimeo videos. Try it out [here](https://z251a66f3-z724110da-gtw.qovery.io/video?q=cTQ3Ko9ZKg8).
 
 ### Usage
 
