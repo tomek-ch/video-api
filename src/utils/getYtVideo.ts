@@ -27,8 +27,8 @@ async function getYtVideo(text: string) {
   const data = {
     id: video.id,
     title: video.snippet.title,
-    views: video.statistics.viewCount,
-    likes: video.statistics.likeCount,
+    views: parseInt(video.statistics.viewCount),
+    likes: parseInt(video.statistics.likeCount),
     thumbnail:
       thumbnails?.standard?.url ||
       thumbnails?.high?.url ||
